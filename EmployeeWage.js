@@ -40,9 +40,9 @@ while(totalEmpHrs <=MAX_HRS_IN_MONTH && totalWorkingDays < NUM_OF_WORKING_DAYS)
   let empCheck = Math.floor(Math.random()*10)%3;
   let empHrs = GetWorkingHours(empCheck);
   totalEmpHrs+=empHrs;
-  //empDailyWageArr.push(CalculateDailyWage(empHrs));
-  //empDailyWageMap.set(totalWorkingDays, CalculateDailyWage(empHrs));
-  //empDailyHourMap.set(totalWorkingDays, empHrs);
+  empDailyWageArr.push(CalculateDailyWage(empHrs));
+  empDailyWageMap.set(totalWorkingDays, CalculateDailyWage(empHrs));
+  empDailyHourMap.set(totalWorkingDays, empHrs);
   empDailyHrsAndWageArr.push
   (
     {
